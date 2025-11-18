@@ -1,5 +1,5 @@
-$DriveLetter = "D"  # USB drive letter to check for
-$BatchFilePath = "D:\killswitch_tcd\launch.bat"  # Specify the full path to your batch file
+$DriveLetter = "E"  # USB drive letter to check for
+$BatchFilePath = "E:\killswitch_tcd\launch.bat"  # Specify the full path to your batch file
 
 while ($true) {
     if (Test-Path "${DriveLetter}:\" ) {
@@ -14,3 +14,4 @@ while ($true) {
     }
     Start-Sleep -Seconds 1  # Check every second
 }
+
